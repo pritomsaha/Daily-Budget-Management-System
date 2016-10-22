@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akash.homebudgetmanagement.OverView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Overview"
+        android:paddingLeft="5dp"
+        android:textColor="@color/link_text_material_dark"
+        android:textSize="30dp"
+        android:id="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView3"
+        android:background="@color/material_deep_teal_500"
+        android:layout_below="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lll">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accounts:"
+            android:textSize="20dp"
+            android:id="@+id/ttxxtAcc"
+            android:layout_marginBottom="30dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/liAA">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:id="@+id/accName"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:id="@+id/balance"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        <TextView
+            android:layout_alignBottom="@+id/liAA"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/mar"
+            android:background="@color/material_deep_teal_500"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:id="@+id/txtTotalAccount"
+            android:layout_alignTop="@+id/mar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Transactions:"
+            android:id="@+id/txtTranc"
+            android:layout_alignTop="@+id/txtTotalAccount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/txtt_Total"
+            android:layout_marginBottom="30dp"
+            android:layout_alignTop="@+id/txtTotalAccount"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txtTranc"
+            android:layout_toEndOf="@+id/txtTranc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:layout_marginTop="45dp"
+            android:textSize="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtTotalAccount" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/texttIncome"
+            android:layout_below="@+id/txtTranc"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:id="@+id/ttEN"
+            android:textSize="15dp"
+            android:layout_below="@+id/texttIncome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/texttExpense"
+            android:layout_below="@+id/texttIncome"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_alignTop="@+id/ttEN"
+            android:layout_marginTop="17dp"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/texttIncome"
+            android:layout_alignEnd="@+id/texttIncome"
+            android:id="@+id/ETC"
+            android:background="@color/material_deep_teal_500"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Budget: "
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/ETC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:id="@+id/texttBudgetDate"
+            android:layout_below="@+id/ETC"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/ttEN"
+            android:layout_toRightOf="@+id/ttEN" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Akash"
+            android:id="@+id/texttBudget"
+            android:layout_marginTop="35dp"
+            android:layout_alignTop="@id/texttBudgetDate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Transactions:"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/texttTraMonth"
+            android:layout_alignTop="@+id/txtTranc"
+            android:layout_toRightOf="@+id/txtTranc"
+            android:layout_toEndOf="@+id/txtTranc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:id="@+id/textTotalInEx"
+            android:layout_below="@+id/ETC"
+            android:layout_toRightOf="@+id/txtTranc"
+            android:text="total"
+            android:layout_alignRight="@+id/texttExpense"
+            android:layout_alignEnd="@+id/texttExpense" />
+
+
+    </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+</RelativeLayout>

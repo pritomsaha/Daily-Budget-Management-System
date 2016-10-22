@@ -1,0 +1,265 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akash.homebudgetmanagement.Income">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Expense"
+                android:textColor="@color/link_text_material_dark"
+                android:textSize="30dp"
+                android:id="@+id/expense"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@color/link_text_material_dark"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/expense"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/expense"
+                android:layout_alignEnd="@+id/expense" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayAcc"
+                android:layout_marginTop="20dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Accounts"
+                    android:gravity="center"
+                    android:id="@+id/income_Account"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_expense_Account"
+                    android:layout_weight="2"
+                    android:hint="Select account"
+                    android:gravity="center"
+                    android:textSize="20dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayName"
+                android:layout_below="@+id/linLayAcc"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="Name"
+                    android:gravity="center"
+                    android:id="@+id/income_Name"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_expense_Name"
+                    android:layout_weight="2"
+                    android:hint="Select name"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayCategory"
+                android:layout_below="@+id/linLayName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Category"
+                    android:gravity="center"
+                    android:id="@+id/income_Category"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:id="@+id/editText_expense_Category"
+                    android:layout_weight="2"
+                    android:hint="Select category"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayAmount"
+                android:layout_below="@+id/linLayCategory"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="Amount"
+                    android:gravity="center"
+                    android:id="@+id/income_Amount"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/editText_expense_Amount"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:longClickable="true"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayDate"
+                android:layout_below="@+id/linLayAmount"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Date"
+                    android:gravity="center"
+                    android:id="@+id/income_Date"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_expense_Date"
+                    android:layout_weight="2"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_light"
+                android:id="@+id/linLayDat"
+                android:layout_below="@+id/linLayDate"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Notes"
+                    android:gravity="center"
+                    android:id="@+id/income_"
+                    android:background="@color/dim_foreground_disabled_material_dark"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:hint="Optional"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/editTextExpenseNotes"
+                    android:layout_weight="2"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@color/background_floating_material_dark"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:textAllCaps="false"
+                android:id="@+id/btnExpenseSave"
+                android:layout_marginTop="50dp"
+                android:layout_alignTop="@+id/linLayDat"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

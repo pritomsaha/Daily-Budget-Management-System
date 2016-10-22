@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:padding="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/relLayExpense">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Categories"
+        android:textColor="@color/link_text_material_dark"
+        android:textSize="30dp"
+        android:id="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/background_floating_material_light"
+        android:id="@+id/linLayAcc"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:gravity="center"
+            android:id="@+id/TextCategoryName"
+            android:background="@color/dim_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCategoryName"
+            android:layout_weight="1"
+            android:hint="Enter Name"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnCategorySave"
+        android:onClick="save"
+        android:background="@color/material_deep_teal_500"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/linLayAcc"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView3"
+        android:background="@color/material_deep_teal_500"
+        android:layout_below="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

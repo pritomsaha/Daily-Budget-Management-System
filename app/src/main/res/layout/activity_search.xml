@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akash.homebudgetmanagement.SearchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Search"
+        android:paddingLeft="5dp"
+        android:textColor="@color/link_text_material_dark"
+        android:textSize="30dp"
+        android:id="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView3"
+        android:background="@color/material_deep_teal_500"
+        android:layout_below="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:textAllCaps="false"
+        android:background="@color/background_floating_material_dark"
+        android:id="@+id/btnIncomeSearch"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background_floating_material_dark"
+        android:text="Expense"
+        android:textAllCaps="false"
+        android:id="@+id/btnExpenseSearch"
+        android:layout_below="@+id/btnIncomeSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnIncomeSearch"
+        android:layout_alignEnd="@+id/btnIncomeSearch" />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget"
+        android:textAllCaps="false"
+        android:id="@+id/btnBudgetSearch"
+        android:layout_below="@+id/btnExpenseSearch"
+        android:background="@color/background_floating_material_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnExpenseSearch"
+        android:layout_alignEnd="@+id/btnExpenseSearch" />
+
+</RelativeLayout>

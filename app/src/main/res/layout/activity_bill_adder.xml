@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/relLayExpense">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Bills"
+        android:paddingLeft="5dp"
+        android:textColor="@color/link_text_material_dark"
+        android:textSize="30dp"
+        android:id="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/textView3"
+        android:background="@color/material_deep_teal_500"
+        android:layout_below="@+id/expense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Accounts"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_account"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Name"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bills_account"
+                android:id="@+id/bills_Name"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Categories"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Categories"
+                android:layout_below="@+id/bills_Name"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Amount"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Amount"
+                android:layout_below="@+id/bills_Categories"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Date"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Date"
+                android:layout_below="@+id/bills_Amount"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Type"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Type"
+                android:layout_below="@+id/bills_Date"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Payment Status"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_PaymentStatus"
+                android:layout_below="@+id/bills_Type"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Notes"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Notes"
+                android:layout_below="@+id/bills_PaymentStatus"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Remind"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/bills_Remind"
+                android:layout_below="@+id/bills_Notes"
+                android:background="@color/dim_foreground_disabled_material_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Save"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/bills_Remind"
+                android:id="@+id/btnSave"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAccounts"
+                android:layout_above="@+id/bills_Name"
+                android:layout_toRightOf="@+id/bills_account"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:layout_above="@+id/bills_Categories"
+                android:layout_alignLeft="@+id/etAccounts"
+                android:layout_alignStart="@+id/etAccounts"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCategories"
+                android:layout_alignBottom="@+id/bills_Categories"
+                android:layout_toRightOf="@+id/bills_Categories"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/etAmount"
+                android:layout_above="@+id/bills_Date"
+                android:layout_toRightOf="@+id/bills_Amount"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_bills_Date"
+                android:layout_above="@+id/bills_Type"
+                android:layout_toRightOf="@+id/bills_Date"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etType"
+                android:layout_above="@+id/bills_PaymentStatus"
+                android:layout_toRightOf="@+id/bills_Type"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPayment_Status"
+                android:layout_above="@+id/bills_Notes"
+                android:layout_toRightOf="@+id/bills_PaymentStatus"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNotes"
+                android:layout_above="@+id/bills_Remind"
+                android:layout_toRightOf="@+id/bills_Notes"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etRemind"
+                android:layout_above="@+id/btnSave"
+                android:layout_toRightOf="@+id/bills_Remind"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

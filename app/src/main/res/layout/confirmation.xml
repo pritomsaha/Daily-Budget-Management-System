@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="All the transactions,budgets \nwill be deleted.Do you want\nto proceed?"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:background="@color/abc_search_url_text_normal"
+        android:id="@+id/btnYES"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/btnNO"
+        android:layout_toStartOf="@+id/btnNO" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background_floating_material_dark"
+        android:text="No"
+        android:textAllCaps="false"
+        android:id="@+id/btnNO"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp" />
+
+</RelativeLayout>

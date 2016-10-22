@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akash.homebudgetmanagement.SearchType_Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Income"
+        android:textColor="@color/link_text_material_dark"
+        android:textSize="30dp"
+        android:id="@+id/Header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:background="@color/link_text_material_dark"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/Header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Header"
+        android:layout_alignEnd="@+id/Header" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:clickable="true"
+        android:editable="false"
+        android:gravity="center"
+        android:id="@+id/eDitText_Date"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btnGo"
+        android:layout_below="@+id/eDitText_Date"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:background="@color/background_floating_material_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp" />
+
+
+</RelativeLayout>
